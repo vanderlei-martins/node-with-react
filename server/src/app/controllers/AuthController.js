@@ -1,3 +1,5 @@
+// testes de autenticação nas rotas
+
 const express = require('express');
 const middlewareAuth = require('../middleware/auth');
 

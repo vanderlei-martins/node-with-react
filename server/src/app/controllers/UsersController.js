@@ -17,8 +17,9 @@ module.exports = {
         if (!users) {
             return res.json({ msg: "Nenhum registro encontrado" });
         }
-
-        return res.json(users);
+        console.log(users);
+        
+        return res.json({data: users});
     },
 
     /**

@@ -14,8 +14,6 @@ module.exports = (req, res, prox) => {
     }
 
     const idUser = helpersAuth.verifyToken(valueToken);
-    console.log('aquiiii');
-    console.log(idUser);
 
     if(!idUser) {
         return res.status(401).send({ msg: "Token é invalido #2" });

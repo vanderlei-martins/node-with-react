@@ -8,5 +8,6 @@ app.use(express.json());
 app.use(routes);
 
 require('./app/controllers/AuthController')(app);
+require('./app/controllers/Starwarscontroller')(app);
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
